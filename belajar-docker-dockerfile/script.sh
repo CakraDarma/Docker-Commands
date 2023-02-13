@@ -37,7 +37,7 @@ docker container start add
 docker container logs add
 
 # COPY Instruction
-docker build -t cakradarma/copy copy
+docker build -t cakradarma/copy 6-copy
 
 docker container create --name copy cakradarma/copy
 
@@ -46,7 +46,7 @@ docker container start copy
 docker container logs copy
 
 # .dockerignore
-docker build -t cakradarma/ignore ignore
+docker build -t cakradarma/ignore 7-ignore
 
 docker container create --name ignore cakradarma/ignore
 
@@ -55,7 +55,7 @@ docker container start ignore
 docker container logs ignore
 
 # EXPOSE Instruction
-docker build -t cakradarma/expose expose
+docker build -t cakradarma/expose 8-expose
 
 docker image inspect cakradarma/expose
 
@@ -68,7 +68,7 @@ docker container ls
 docker container stop expose
 
 # ENV Instruction
-docker build -t cakradarma/env env
+docker build -t cakradarma/env 9-env
 
 docker image inspect cakradarma/env
 
@@ -83,7 +83,7 @@ docker container logs env
 docker container stop env
 
 # VOLUME Instruction
-docker build -t cakradarma/volume volume
+docker build -t cakradarma/volume 10-volume
 
 docker image inspect cakradarma/volume
 
@@ -95,7 +95,7 @@ docker container logs volume
 
 docker container inspect volume
 
-#15a53c9a60b9aaddb3c294cde03e6f283f319acf0db3e40c5d4b4a992a6451f1
+# 36022a58cacddbd8d6adaa69c284fe6b5f034f70b9b5c30ae5f1c2dbc7f45d1a
 
 docker volume ls
 
